@@ -39,6 +39,7 @@ public class GoddessDAO {
             String sql=""+"delete from girls.message where id=?";
             PreparedStatement preparedStatement=connection.prepareStatement(sql);
             preparedStatement.setInt(1,id);
+            preparedStatement.execute();
     }
         //修改操作
         public  void updateGoddess(Goddess g) throws SQLException {
