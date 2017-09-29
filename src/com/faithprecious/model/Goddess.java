@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Created by faithpercious on 2017/9/28.
+ * 对象实现类
  */
 public class Goddess {
     private int id;
@@ -14,7 +15,7 @@ public class Goddess {
     private String email;
     private String mobile;
     private String create_user;
-    private String create_date;
+    private Date create_date;
     private String update_user;
     private Date update_date;
     private int isdel;
@@ -83,11 +84,11 @@ public class Goddess {
         this.create_user = create_user;
     }
 
-    public String getCreate_date() {
+    public Date getCreate_date() {
         return create_date;
     }
 
-    public void setCreate_date(String create_date) {
+    public void setCreate_date(Date create_date) {
         this.create_date = create_date;
     }
 
@@ -115,5 +116,20 @@ public class Goddess {
         this.isdel = isdel;
     }
 
-
+    @Override
+    public String toString() {
+        return
+                "id=" + id +
+                ", user_name='" + user_name + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", birthday=" + birthday +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", create_user='" + create_user + '\'' +
+                ", create_date=" + create_date +
+                ", update_user='" + update_user + '\'' +
+                ", update_date=" + update_date +
+                ", isdel=" + isdel ;
+    }
 }
