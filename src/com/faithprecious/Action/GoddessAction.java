@@ -48,8 +48,6 @@ public class GoddessAction {
     }
 
 }
-
-
 //        gd.deleteGoddess(4);
 //        Goddess  h=gd.getGoddess(3);
 //        System.out.println(h.toString());
